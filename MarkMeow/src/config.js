@@ -6,47 +6,19 @@ export const MarkMeowABI = [
     "type": "constructor"
   },
   {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "owner",
-        "type": "address"
-      }
-    ],
-    "name": "OwnableInvalidOwner",
-    "type": "error"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "account",
-        "type": "address"
-      }
-    ],
-    "name": "OwnableUnauthorizedAccount",
-    "type": "error"
-  },
-  {
     "anonymous": false,
     "inputs": [
       {
         "indexed": false,
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "catId",
-        "type": "uint256"
+        "type": "uint16"
       },
       {
         "indexed": false,
-        "internalType": "string",
-        "name": "city",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "features",
-        "type": "string"
+        "internalType": "uint8",
+        "name": "gender",
+        "type": "uint8"
       },
       {
         "indexed": false,
@@ -89,9 +61,9 @@ export const MarkMeowABI = [
     "inputs": [
       {
         "indexed": false,
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "catId",
-        "type": "uint256"
+        "type": "uint16"
       },
       {
         "indexed": false,
@@ -108,61 +80,26 @@ export const MarkMeowABI = [
     "inputs": [
       {
         "indexed": false,
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "catId",
-        "type": "uint256"
+        "type": "uint16"
       },
       {
         "indexed": false,
         "internalType": "bool",
         "name": "isNeutered",
         "type": "bool"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "neuteredDate",
-        "type": "uint256"
       }
     ],
     "name": "NeuterStatusUpdated",
     "type": "event"
   },
   {
-    "anonymous": false,
     "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "previousOwner",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "newOwner",
-        "type": "address"
-      }
-    ],
-    "name": "OwnershipTransferred",
-    "type": "event"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_city",
-        "type": "string"
-      },
       {
         "internalType": "uint8",
         "name": "_gender",
         "type": "uint8"
-      },
-      {
-        "internalType": "string",
-        "name": "_features",
-        "type": "string"
       },
       {
         "internalType": "bool",
@@ -176,31 +113,11 @@ export const MarkMeowABI = [
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "renounceOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
     "inputs": [
       {
-        "internalType": "address",
-        "name": "newOwner",
-        "type": "address"
-      }
-    ],
-    "name": "transferOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "_catId",
-        "type": "uint256"
+        "type": "uint16"
       },
       {
         "internalType": "bool",
@@ -216,9 +133,9 @@ export const MarkMeowABI = [
   {
     "inputs": [
       {
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "_catId",
-        "type": "uint256"
+        "type": "uint16"
       },
       {
         "internalType": "string",
@@ -285,22 +202,17 @@ export const MarkMeowABI = [
   {
     "inputs": [
       {
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "",
-        "type": "uint256"
+        "type": "uint16"
       }
     ],
     "name": "cats",
     "outputs": [
       {
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "id",
-        "type": "uint256"
-      },
-      {
-        "internalType": "string",
-        "name": "city",
-        "type": "string"
+        "type": "uint16"
       },
       {
         "internalType": "uint8",
@@ -308,24 +220,9 @@ export const MarkMeowABI = [
         "type": "uint8"
       },
       {
-        "internalType": "string",
-        "name": "features",
-        "type": "string"
-      },
-      {
         "internalType": "bool",
         "name": "isNeutered",
         "type": "bool"
-      },
-      {
-        "internalType": "uint256",
-        "name": "neuteredDate",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "registerDate",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -379,28 +276,9 @@ export const MarkMeowABI = [
   {
     "inputs": [
       {
-        "internalType": "address",
-        "name": "_donor",
-        "type": "address"
-      }
-    ],
-    "name": "getDonationHistory",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "_catId",
-        "type": "uint256"
+        "type": "uint16"
       }
     ],
     "name": "getNeuterProof",
@@ -443,9 +321,9 @@ export const MarkMeowABI = [
   {
     "inputs": [
       {
-        "internalType": "uint256",
+        "internalType": "uint16",
         "name": "",
-        "type": "uint256"
+        "type": "uint16"
       }
     ],
     "name": "neuterProofs",
@@ -500,4 +378,4 @@ export const MarkMeowABI = [
   }
 ];
 
-export const MarkMeowAddress = '0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8'; // 替换为你部署的合约地址
+export const MarkMeowAddress = '0x88aa67548C080eFd168379b9567A4c863BdB99F8'; // 替换为你部署的合约地址
