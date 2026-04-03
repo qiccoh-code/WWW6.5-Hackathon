@@ -10,7 +10,6 @@ export const internSbtAddress =
 export const reviewContractAddress =
   "0x3845300491F10FC8C87694C5c8D7D62bFc12e1DC" as const;
 
-// 大写别名，保持向后兼容
 export const REVIEW_CONTRACT_ADDRESS = reviewContractAddress;
 
 /**
@@ -21,6 +20,13 @@ export const REVIEW_CONTRACT_ADDRESS = reviewContractAddress;
  * - isValidCredential：校验凭证是否有效
  */
 export const internSbtAbi = [
+  {
+    type: "function",
+    name: "balanceOf",
+    stateMutability: "view",
+    inputs: [{ name: "owner", type: "address" }],
+    outputs: [{ name: "", type: "uint256" }],
+  },
   {
     type: "function",
     name: "mintSBT",
