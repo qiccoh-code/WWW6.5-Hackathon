@@ -16,7 +16,7 @@ const cta = [
       "border-[#165DFF]/40 bg-[#165DFF]/10 text-foreground hover:bg-[#165DFF]/20",
   },
   {
-    href: "/companies",
+    href: "/company-ranking",
     label: "企业榜单",
     sub: "查看合作机构榜单",
     icon: Building2,

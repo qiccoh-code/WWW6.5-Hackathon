@@ -25,7 +25,7 @@ import { cn } from "@/lib/utils";
 const NAV_LINKS = [
   { href: "/", label: "首页" },
   { href: "/search", label: "评价广场" },
-  { href: "/companies", label: "企业榜单" },
+  { href: "/company-ranking", label: "企业榜单" },
 ] as const;
 
 function NavLinks({

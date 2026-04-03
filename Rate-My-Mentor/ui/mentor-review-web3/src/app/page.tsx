@@ -193,17 +193,31 @@ export default function HomePage() {
           </div>
 
           {/* 发布评价按钮 */}
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link href="/review">
-              <Button className="bg-[#165DFF] hover:bg-[#0E42D2]">
-                Mentor 评价
-              </Button>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link href="/review" className="group">
+              <div className="flex items-center gap-4 rounded-lg border border-[#E5E6EB] bg-white px-6 py-4 shadow-sm transition-all hover:border-[#165DFF]/50 hover:shadow-md w-72">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#165DFF]">
+                  <GraduationCap className="h-6 w-6 text-white" />
+                </div>
+                <div className="text-left">
+                  <p className="text-base font-semibold text-foreground">Mentor 评价</p>
+                  <p className="text-xs text-muted-foreground">分享带教体验</p>
+                </div>
+                <ArrowUpRight className="ml-auto h-5 w-5 text-muted-foreground transition-colors group-hover:text-[#165DFF]" />
+              </div>
             </Link>
-            <Link href="/reviews">
-              <Button variant="outline" className="border-[#165DFF] text-[#165DFF] hover:bg-[#165DFF]/10">
-                企业评价
-              </Button>
-            </Link>
+            {/* <Link href="/review?tab=company" className="group">
+              <div className="flex items-center gap-4 rounded-lg border border-[#E5E6EB] bg-white px-6 py-4 shadow-sm transition-all hover:border-[#165DFF]/50 hover:shadow-md w-72">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#165DFF]">
+                  <Building2 className="h-6 w-6 text-white" />
+                </div>
+                <div className="text-left">
+                  <p className="text-base font-semibold text-foreground">企业评价</p>
+                  <p className="text-xs text-muted-foreground">分享职场体验</p>
+                </div>
+                <ArrowUpRight className="ml-auto h-5 w-5 text-muted-foreground transition-colors group-hover:text-[#165DFF]" />
+              </div>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -269,7 +283,7 @@ export default function HomePage() {
               </p>
             </div>
             <Link
-              href="/companies"
+              href="/company-ranking"
               className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-[#165DFF] hover:underline sm:mt-0"
             >
               查看全部 <ArrowUpRight className="h-4 w-4" />
@@ -439,7 +453,7 @@ export default function HomePage() {
                     </p>
 
                     {/* 权限控制：未核验用户查看完整评价 */}
-                    {!isVerified && review.comment.length > 80 && (
+                    {/* {!isVerified && review.comment.length > 80 && (
                       <Button
                         variant="link"
                         size="sm"
@@ -448,7 +462,7 @@ export default function HomePage() {
                       >
                         查看完整评价（需先完成身份核验）
                       </Button>
-                    )}
+                    )} */}
 
                     {/* 标签 */}
                     <div className="mt-3">
