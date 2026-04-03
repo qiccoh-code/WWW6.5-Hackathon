@@ -4,7 +4,7 @@ import { Plus, X, Zap, ArrowLeft, MessageSquare, Calendar, Trash2, Palette } fro
 const HabitDashboard = () => {
   // --- 1. 状态管理 ---
   const [habits, setHabits] = useState(() => {
-    const saved = localStorage.getItem('islelandHabits');
+    const saved = localStorage.getItem('IsleLightHabits');
     return saved ? JSON.parse(saved) : [
       { 
         id: 1, 
@@ -32,7 +32,7 @@ const HabitDashboard = () => {
 
   // 保存到本地
   useEffect(() => {
-    localStorage.setItem('islelandHabits', JSON.stringify(habits));
+    localStorage.setItem('IsleLightHabits', JSON.stringify(habits));
   }, [habits]);
 
   // --- 2. 预设数据 ---
@@ -181,7 +181,7 @@ const HabitDashboard = () => {
 
   // --- 5. 主页面 JSX ---
   return (
-    <div className="isleland-app">
+    <div className="IsleLight-app">
       {/* 动态背景 */}
       <div className="cosmic-bg">
         <div className="glow-sphere s1"></div>
@@ -191,7 +191,7 @@ const HabitDashboard = () => {
       <div className="dashboard-wrapper">
         <header className="app-header">
           <div className="brand-box">
-            <h1>Isleland</h1>
+            <h1>IsleLight</h1>
             <p>构建你的梦幻习惯群岛</p>
           </div>
           <button className="main-add-btn" onClick={() => setShowAddModal(true)}>
@@ -335,7 +335,7 @@ const HabitDashboard = () => {
 
       <style>{`
         /* 全局美化样式 */
-        .isleland-app {
+        .IsleLight-app {
           min-height: 100vh;
           background: #0a0a1a;
           color: white;
