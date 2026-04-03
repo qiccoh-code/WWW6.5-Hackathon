@@ -7,6 +7,8 @@
   No Uterus, No Opinion
 </p>
 
+**Landing Page** → [月经小屋](https://shiannona-cloud.github.io/menstrualhut-landing/)
+
 **在线体验** → [Menstrual Hut | 月经小屋](https://menstrualhut.vercel.app/)  
 **Live Experience** → [Menstrual Hut | 月经小屋](https://menstrualhut.vercel.app/)
 
@@ -169,16 +171,16 @@ Core Philosophy: **"Care and Alliance"** — Women heal each other through shari
 
 | 路径                    | 页面名称                    | 主要功能                         | 访问权限     |
 |-------------------------|-----------------------------|----------------------------------|--------------|
-| `/`                     | 首页                        | 上传感受，经期记录，搜索           | Public       |
+| `/`                     | 首页                        | 上传感受，经期记录，搜索，浏览公开经验贴（免费+付费）| Public / User  |
 | `/my-archive`           | 我的小屋                     | 查看自己的所有记录               | User         |
-| `/explore`              | 探索                        | 浏览公开经验贴（免费+付费）       | Public/User  |
+| `/experience`              | 经验贴详细                | 查看经验贴详细                   | Public/User  |
 | `/profile`              | 个人中心                     | MOON 余额设置审核者入口          | User         |
 
 | Path                    | Page Name                   | Main Function                            | Access       |
 |-------------------------|-----------------------------|------------------------------------------|--------------|
-| `/`                     | Home                        | Upload feelings，Period tracking，Browse  | Public       |
+| `/`                     | Home                        | Upload feelings，Period tracking，Browse， Browse public experience posts (free + paid).  | Public/user   |
 | `/my-archive`           | My Archive                  | View all personal on-chain records       | User         |
-| `/explore`              | Explore                     | Browse public experience posts (free + paid) | Public/User |
+| `/experience`              | Detailed experience post | View details of the experience post      | Public/User  |
 | `/profile`              | Profile                     | MOON balance, reviewer entry             | User         |
 
 ## 黑客松信息 / Hackathon Info
