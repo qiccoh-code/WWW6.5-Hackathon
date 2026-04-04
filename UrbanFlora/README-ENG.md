@@ -100,9 +100,15 @@ http://localhost:8080
 
 ### 3. Start Frontend
 
-- Open `index.html`  
-- Connect your wallet  
-- Enter the contract address and ABI  
+```
+npm run dev
+```
+
+Default address:
+
+```
+http://localhost:8081
+```
 
 ---
 
